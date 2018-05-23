@@ -12,12 +12,19 @@ import com.smart.sso.client.SessionUser;
 import com.smart.sso.client.SessionUtils;
 
 /**
- * @author Joe
+ * @author zd
+ *
  */
 @Controller
 @RequestMapping("/index")
 public class IndexController {
 
+	/** 
+	* @Title: execute 
+	* @Description: TODO 
+	* @author zd
+	* @date 2018年5月23日下午3:59:05
+	*/ 
 	@RequestMapping(method = RequestMethod.GET)
 	public String execute(HttpServletRequest request, Model model) {
 		SessionUser sessionUser = SessionUtils.getSessionUser(request);
